@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.example.inquiry.api.mapper.InquiryMapper">
+    <insert id="insertInquiry">
+           INSERT INTO access (
+           id,
+           name,
+           furigana,
+           phone_number,
+           mail_address,
+           content_of_inquiry,
+           company_name,
+           free_comment
+           ) values (
+           null,
+           #{name},
+           #{furigana},
+           #{phone_number},
+           #{mail_address},
+           #{content_of_inquiry},
+           #{company_name},
+           #{free_comment}
+)
+    </insert>
+</mapper>
+
+
